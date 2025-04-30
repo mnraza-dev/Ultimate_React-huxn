@@ -1,8 +1,9 @@
-import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer className='px-4 bg-blue-200 py-12 w-screen flex justify-center'>
+      <p className='text-lg'>All Copyright Reserved &copy; {new Date().getFullYear()}</p>
+    </footer>
   )
 }
 

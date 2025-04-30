@@ -1,14 +1,10 @@
-
-import { Link } from 'react-router-dom'
-
 const Header = () => {
   return (
-    <header className='bg-green-800 px-4 py-2 flex justify-between items-center '>
-      <Link to='/'>My Dashboard</Link>
-
+    <header className='bg-teal-800 px-4 py-2 flex justify-between items-center '>
+      <a href='/' className="text-white text-xl font-medium">My Dashboard</a>
       <div className='flex gap-2'>
-        <Link to='/profile'>Profile</Link>
-        <Link to="/logout">Logout</Link>
+        <a className="text-white text-lg" href='/profile'>Profile</a>
+        <a className="text-white text-lg" href="/logout">Logout</a>
       </div>
     </header>
   )
