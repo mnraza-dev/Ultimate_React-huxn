@@ -1,23 +1,22 @@
 import React, { ReactNode } from 'react'
-import Left from './Left'
-import Right from './Right'
 interface SplitScreenProps {
   children: [ReactNode, ReactNode],
   leftWeight?: number,
   Rightweight?: number
 }
 const SplitScreen: React.FC<SplitScreenProps> = ({ children, leftWeight, Rightweight }) => {
-  const [left, right] = children
+  const [left, right] = children;
+  const leftWidth = `${leftWeight}rem`;
+  const RightWidth = `${Rightweight}rem`;
 
   return (
-    <section>
-      <div>
+    <section className='flex w-screen'>
+      <div style={{ width: leftWidth }}>
         {left}
       </div>
-      <div>
+      <div style={{ width: RightWidth }}>
         {right}
       </div>
-      {children}
 
     </section>
   )

@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Left: React.FC = () => {
+const Left= () => {
   return (
-    <div className='bg-teal-500 h-[46rem]'>Left</div>
+    <div className='bg-teal-500 h-screen'>
+    </div>
   )
 }
 
