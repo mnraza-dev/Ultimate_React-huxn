@@ -1,10 +1,16 @@
-import React from 'react'
+import Layout from './components/Layout'
 
 const App = () => {
   return (
-    <div className='flex '>
-      <h1 className='text-3xl'>Design Pattern Challenge 01</h1>
-    </div>
+
+    <>
+    <Layout>
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+    </Layout>
+    </>
+
   )
 }
 
